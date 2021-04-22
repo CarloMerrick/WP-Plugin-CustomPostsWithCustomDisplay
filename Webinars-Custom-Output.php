@@ -67,13 +67,13 @@ function cw_post_type_webinars() {
             
                 while ( $postslist->have_posts() ) : $postslist->the_post();         
                     $webinars    .= '<div class="short_style">'; 
-                    $webinars    .= "<h2>" . get_the_title() ."<br/></h2>";
-                    $webinars    .= "Location :". get_field('location') . "<br/>";   
-                    $webinars    .= "Speaker :". get_field('speaker').  "<br/>";
-                    $webinars    .= "Date :". get_field('date').  "<br/>";	
-                    $webinars    .= "Time :". get_field('time').  "<br/>";
-                    $webinars    .= "Registration Link :". '<a href="'. get_permalink() .'">'. get_field('registration-link') . '</a>' .  "<br/>";
-                    $webinars    .= "Promo-Video :<br/>". get_field('promo_video').  "<br/>";
+                    $webinars    .= "<h2>" . get_the_title() ."<br/></h2>"; // gets title of the webinar post
+                    $webinars    .= "Location :". get_field('location') . "<br/>"; // gets "location" value from custom field  
+                    $webinars    .= "Speaker :". get_field('speaker').  "<br/>"; // gets "speaker" value from custom field
+                    $webinars    .= "Date :". get_field('date').  "<br/>";	// gets "date" value from custom field
+                    $webinars    .= "Time :". get_field('time').  "<br/>";// gets "time" value from custom field
+                    $webinars    .= "Registration Link :". '<a href="'. get_permalink() .'">'. get_field('registration-link') . '</a>' .  "<br/>"; // gets "registration-link" value from custom field
+                    $webinars    .= "Promo-Video :<br/>". get_field('promo_video').  "<br/>"; // gets "promo_video" value from custom field
                     $webinars    .= '</div>';      
                     
                 endwhile;
