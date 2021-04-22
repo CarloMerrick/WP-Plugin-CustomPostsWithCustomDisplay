@@ -1,0 +1,22 @@
+/*Some basic CSS for output of custom fields*/
+
+/*set style for div with post content*/
+div.short_style {
+    position: relative;
+    display: flex;
+    width: 400px;
+    background-color: #ebebeb;
+    display: inline-block;
+    padding: 10px 10px 0px 10px;
+    margin: 10px;
+    float: center;
+    border-radius: 20px;
+}
+/* set display for div containing multiple divs with content*/
+div.webinars-lists {
+    display: flex;
+}
+/*set main page div size so more divs can fit together*/
+.entry .entry-content > *, .entry .entry-summary > *, .entry .entry-summary > .wp-block-group > .wp-block-group__inner-container > *, .entry .entry-content > .wp-block-group > .wp-block-group__inner-container > * {
+ 	max-width: 100vw;  
+}
